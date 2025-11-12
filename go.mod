@@ -1,6 +1,6 @@
 module github.com/cometbft/cometbft-db
 
-go 1.23
+go 1.23.0
 
 require (
 	github.com/cockroachdb/pebble v1.1.4
@@ -43,15 +43,14 @@ require (
 	github.com/rogpeppe/go-internal v1.13.1 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/exp v0.0.0-20250106191152-7588d65b2ba8 // indirect
-	golang.org/x/net v0.34.0 // indirect
-	golang.org/x/sys v0.29.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/net v0.38.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/text v0.23.0 // indirect
 	google.golang.org/protobuf v1.36.4 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-
 retract (
-		v0.6.5 // Breaking changes were released with the wrong tag (use v0.6.6 or later).
-		[v1.0.2, v1.0.3] // These do not have Docker images due to the broken pipeline.
+	[v1.0.2, v1.0.3] // These do not have Docker images due to the broken pipeline.
+	v0.6.5 // Breaking changes were released with the wrong tag (use v0.6.6 or later).
 )
